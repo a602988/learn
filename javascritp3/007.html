@@ -35,18 +35,26 @@
     // const le = people.every(p =>{
     //         return new Date().getUTCFullYear() - p.year >= 19
     //     });
-    //     console.log(le)
-
+    // console.log(le)
+    //
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
 
-    //
-    // let lt = comments.findIndex( comment => comment.id == '542328')
-    // console.log(lt);
-    // Array.prototype.findIndex()
-    // Find the comment with this ID
-    // delete the comment with the ID of 823423
+
+    // //
+    let ans3 = comments.findIndex( comment => comment.id == '823423')
+    console.log(ans3)
+
+    //const ans4 = comments.splice(ans3,1)
+    //console.log(ans4,comments)
+
+    const ans5 = comments.slice(0,ans3)
+    console.log(ans5,comments)
+    const ans6 = comments.slice(ans3+1)
+    console.log(ans6,comments)
+
+
 
   </script>
 </body>
